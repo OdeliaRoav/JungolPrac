@@ -21,26 +21,21 @@ public class Main {
 			int b = sc.nextInt();
 			
 			if(a>=2 && a<=9 && b>=2 && b<=9) {
-				
 				if(a>b) {
-					
 					for(int i = 1; i<=9; i++) {
 						for(int j = a; j>=b; j--) {
 							System.out.printf("%d * %d =%3d   ", j, i , j*i);
 							}
 						System.out.println();
 						}
-					
 				}
-				else if(b<a) {
-					
+				else if(b>a) {
 					for(int i = 1; i<=9; i++) {
-						for(int j = b; j>=a; j--) {
-							System.out.printf("%d * %d =%3d   ", j, i , j*i);
-							}
-						System.out.println();
+						for(int j = a; j<=b; j++) {
+							System.out.printf("%d * %d =%3d   ", j, i, j*i);
 						}
-					
+						System.out.println();
+					}
 				}
 				else {
 					for(int i = 1; i<=9; i++) {
@@ -48,16 +43,11 @@ public class Main {
 					}
 				}
 				break;
-				
 			}
 			else {
 				System.out.println("INPUT ERROR!");
 			}
-			
-			
 		}
-		
-		
 	}
 //System.out.println(a + " * " + i + " = "+a*i +"   " +  b + " * " + i + " = " + b*i  );
 }//System.out.printf("%d * %d =%3d   %d * %d =%3d \n", a, i, a*i, b, i, b*i );
