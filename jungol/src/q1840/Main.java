@@ -76,7 +76,15 @@ public class Main {
 		
 	}
 	
-	public 
+	public static void initVisited() {
+		for(int i = 0; i < ar.length; i++) {
+			for(int j = 0; j<ar[i].length; j++) {
+				if(ar[i][j] == 1) {
+					
+				}
+			}
+		}
+	}
 	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -95,9 +103,9 @@ public class Main {
 		sc.close();
 		
 		int time = 0;
-		
+		int cCheese = 0;
 		do {
-			System.out.println(time++));
+			time++;
 			initVisited();
 			
 			printArr();
