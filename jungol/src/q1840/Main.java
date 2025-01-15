@@ -41,8 +41,13 @@ public class Main {
 		return isCheese;
 	}
 	
-	public static void melting
+	public static void meltingCheese() {
+		
+	}
 	
+	private static int countingCheese() {
+		
+	}
 	
 	
 	public static void r(int ph, int pw) {
@@ -94,10 +99,15 @@ public class Main {
 		do {
 			System.out.println(time++));
 			initVisited();
+			
 			printArr();
 			printVisited();
 			
 			r(0,0);
+			meltingCheese();
+			
+			
+			
 		}while(checkCheese());
 		
 	}
