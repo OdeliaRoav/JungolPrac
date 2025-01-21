@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Main {
 
-	public static double Circle(int a) {
+	static double Circle(int a) {
 		double b = a* a*3.14;
 		
 		return b;
