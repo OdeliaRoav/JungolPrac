@@ -13,16 +13,6 @@ public class TEST2 {
 			a[i] = sc.nextInt();
 		}
 		
-		for(int i = 0; i<10; i++) {
-			if(a[i]>=100) {
-				
-			}
-			else {
-				System.out.println(100);
-			}
-				
-				
-		}
 		
 	}
 
