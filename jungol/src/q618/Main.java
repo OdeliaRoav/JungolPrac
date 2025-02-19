@@ -1,8 +1,6 @@
 package q618;
 
 import java.util.Scanner;
-import java.util.Arrays;
-import java.util.Comparator;
 
 class Info {
     String name;
@@ -18,28 +16,43 @@ public class Main {
         // 입력 받기
         for (int i = 0; i < 5; i++) {
             people[i] = new Info();
-            people[i].name = sc.next(); // 이름 (최대 20자)
+            people[i].name = sc.next();
             people[i].height = sc.nextInt();
             people[i].weight = sc.nextFloat();
         }
-        
+
         sc.close();
 
-        // 1. 이름순 정렬 (오름차순)
-        Arrays.sort(people, Comparator.comparing(o -> o.name));
+        // 1. 이름순 정렬 (오름차순, 버블 정렬)
+        for (int i = 0; i < 4; i++) {
+            for (int j = 0; j < 4 - i; j++) {
+                if (people[j].name.compareTo(people[j + 1].name) > 0) {
+                    Info temp = people[j];
+                    people[j] = people[j + 1];
+                    people[j + 1] = temp;
+                }
+            }
+        }
 
         System.out.println("name");
-        for (Info person : people) {
-            System.out.printf("%s %d %.1f\n", person.name, person.height, person.weight);
+        for (int i = 0; i < 5; i++) {
+            System.out.printf("%s %d %.1f\n", people[i].name, people[i].height, people[i].weight);
         }
-        
-        System.out.println();
-        // 2. 몸무게순 정렬 (내림차순)
-        Arrays.sort(people, Comparator.comparingDouble((Info o) -> o.weight).reversed());
+
+        // 2. 몸무게순 정렬 (내림차순, 버블 정렬)
+        for (int i = 0; i < 4; i++) {
+            for (int j = 0; j < 4 - i; j++) {
+                if (people[j].weight < people[j + 1].weight) {
+                    Info temp = people[j];
+                    people[j] = people[j + 1];
+                    people[j + 1] = temp;
+                }
+            }
+        }
 
         System.out.println("weight");
-        for (Info person : people) {
-            System.out.printf("%s %d %.1f\n", person.name, person.height, person.weight);
+        for (int i = 0; i < 5; i++) {
+            System.out.printf("%s %d %.1f\n", people[i].name, people[i].height, people[i].weight);
         }
     }
 }
