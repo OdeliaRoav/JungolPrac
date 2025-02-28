@@ -21,5 +21,5 @@ public class Main {
 		}
 		System.out.print(c);
 	}
-
+//관련 함수들 하나도 안쓰고 맞음 ㄷㄷ;;
 }
