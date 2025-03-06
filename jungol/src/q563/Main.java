@@ -1,7 +1,7 @@
 package q563;
 
+import java.util.Arrays;
 import java.util.Scanner;
-
 
 public class Main {
 
@@ -16,8 +16,10 @@ public class Main {
 			Array[i] = sc.nextInt();
 		}
 		
+		Arrays.sort(Array);
+		
 		for(int i = 0; i<Array.length; i++) {
-			for(int j = i; j<Array.length; j++) {
+			for(int j = i+1; j<Array.length; j++) {
 				int num = Array[i];
 				
 				if(num<Array[j]) {
@@ -29,8 +31,8 @@ public class Main {
 			}
 		}
 		
-		for(int i = 0; i<Array.length; i++) {
-			System.out.print(Array2[i] + " ");
+		for(int i = Array.length-1; i>=0; i--) {
+			System.out.print(Array[i] + " ");
 		}
 		
 		
