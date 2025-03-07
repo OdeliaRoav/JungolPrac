@@ -22,6 +22,9 @@ public class Main {
 			}
 			
 		}
+		else if (M == 2) {
+			
+		}
 		
 		
 	}
