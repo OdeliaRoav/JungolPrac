@@ -9,18 +9,32 @@ public class Main {
 		
 		int a = sc.nextInt();
 		
-		/*
-		switch(a) {
-		case 4:
-			break;
-		case 3:
-			break;
-		case 2:
-			break;
-		case 1:
-			break;
+		
+		int b = 0;
+		int sum = 0;
+		
+		while(b <= 6) {
+			int c = sc.nextInt();
+			int d = sc.nextInt();
+			
+			switch(a) {
+			case 4:
+				
+				break;
+			case 3:
+				
+				break;
+			case 2:
+				
+				break;
+			case 1:
+				
+				break;
+			}
+			
+			b++;
 		}
-		*/
+		
 		
 	}
 
@@ -30,4 +44,8 @@ public class Main {
 3 = 남
 2 = 서
 1 = 동
+*/
+
+/*
+
 */
