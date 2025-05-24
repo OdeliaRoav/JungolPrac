@@ -4,8 +4,7 @@ public class Main6 {
 	
 	
 
-	
-	
+		
 }
 
 
