@@ -18,7 +18,8 @@ public class Main {
         System.out.printf("%.6f%n", this.weight); 
     }
 
-   
+
+
     
     
     
