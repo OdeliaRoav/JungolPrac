@@ -17,10 +17,12 @@ public class Main {
         System.out.println("My weight");
         System.out.printf("%.6f%n", this.weight); 
     }
-   
+
     
     
-    public static void main(String[] args) {
+
+    
+    static void main(String[] args) {
         Main ma = new Main(170, 68.6);
         ma.printDetails(); 
     }
