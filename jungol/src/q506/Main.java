@@ -17,8 +17,6 @@ public class Main {
         System.out.println("My weight");
         System.out.printf("%.6f%n", this.weight); 
     }
-
-
     
    
     static void main(String[] args) {
