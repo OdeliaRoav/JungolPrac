@@ -18,6 +18,8 @@ public class Main {
         System.out.printf("%.6f%n", this.weight); 
     }
     
+    
+    
    
     static void main(String[] args) {
         Main ma = new Main(170, 68.6);
